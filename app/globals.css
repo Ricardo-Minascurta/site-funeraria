@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-lato: 'Lato', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-lato);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant);
+}
+
+/* Custom Animations */
+@layer utilities {
+  /* Fade In */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  /* Fade In Up */
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Slow Pulse */
+  .animate-pulse-slow {
+    animation: pulseSlow 3s ease-in-out infinite;
+  }
+
+  /* Slow Bounce */
+  .animate-bounce-slow {
+    animation: bounceSlow 2s ease-in-out infinite;
+  }
+
+  /* Scroll Down Indicator */
+  .animate-scroll-down {
+    animation: scrollDown 1.5s ease-in-out infinite;
+  }
+
+  /* Draw SVG Path */
+  .animate-draw {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: draw 2s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: #C4A052;
+  color: white;
+}
