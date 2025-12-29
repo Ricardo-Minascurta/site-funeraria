@@ -243,14 +243,14 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`lg:hidden fixed inset-x-0 bottom-0 bg-white shadow-xl transition-all duration-500 ${
+        className={`lg:hidden fixed inset-x-0 bottom-0 bg-white shadow-xl transition-all duration-500 overflow-y-auto ${
           mobileMenuOpen
             ? 'opacity-100 visible'
             : 'opacity-0 invisible'
         }`}
         style={{ top: headerHeight }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-4 py-6 h-full flex flex-col">
           <nav className="flex flex-col gap-2">
             {navLinks.map((link, index) => (
               <div
@@ -318,7 +318,7 @@ export default function Header() {
 
           {/* Mobile CTA */}
           <div
-            className={`mt-8 transform transition-all duration-500 ${
+            className={`mt-auto pt-6 transform transition-all duration-500 ${
               mobileMenuOpen
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-8 opacity-0'
