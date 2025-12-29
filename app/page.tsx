@@ -65,12 +65,12 @@ export default function Home() {
                 </svg>
                 Falar por WhatsApp
               </a>
-              <Link
-                href="/servicos"
+              <a
+                href="#servicos"
                 className="flex items-center gap-3 border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-400 px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:scale-105"
               >
                 Nossos Serviços
-              </Link>
+              </a>
             </div>
 
             {/* Availability Badge */}
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* Serviços Section */}
-      <section className="relative bg-white py-20 lg:py-32">
+      <section id="servicos" className="relative bg-white py-20 lg:py-32 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
