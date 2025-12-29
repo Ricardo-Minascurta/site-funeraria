@@ -103,6 +103,7 @@ export default function FuneralJazigo() {
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-12 h-[2px] bg-gold-400" />
                   <div className="w-2 h-2 bg-gold-400 rotate-45" />
+                  <div className="w-12 h-[2px] bg-gold-400" />
                 </div>
 
                 <div className="prose prose-lg max-w-none">
