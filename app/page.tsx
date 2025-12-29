@@ -15,7 +15,8 @@ export default function Home() {
             fill
             className="object-cover object-[70%] md:object-right"
             priority
-            quality={90}
+            quality={100}
+            sizes="100vw"
           />
           {/* Overlay - mais escuro à esquerda, mais leve à direita */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
