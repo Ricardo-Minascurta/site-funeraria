@@ -58,6 +58,12 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // Scroll to top when navigating
+  const handleNavClick = () => {
+    setMobileMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
+
   return (
     <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50">
       {/* Top Bar */}
@@ -281,7 +287,7 @@ export default function Header() {
                             key={service.href}
                             href={service.href}
                             className="block text-base text-brown-dark/80 hover:text-gold-600 transition-colors duration-300 py-2"
-                            onClick={() => setMobileMenuOpen(false)}
+                            onClick={handleNavClick}
                           >
                             {service.name}
                           </Link>
@@ -290,7 +296,7 @@ export default function Header() {
                         <Link
                           href="/perante-a-morte"
                           className="block text-base text-brown-dark/80 hover:text-gold-600 transition-colors duration-300 py-2"
-                          onClick={() => setMobileMenuOpen(false)}
+                          onClick={handleNavClick}
                         >
                           Perante a Morte, O Que Fazer?
                         </Link>
@@ -301,7 +307,7 @@ export default function Header() {
                   <Link
                     href={link.href}
                     className="block text-xl font-serif text-brown-dark hover:text-gold-600 transition-colors duration-300 py-3 border-b border-brown-dark/10"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={handleNavClick}
                   >
                     {link.name}
                   </Link>
