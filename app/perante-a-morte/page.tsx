@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { FileText, Building2, Users, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Perante a Morte - O Que Fazer',
-  description: 'Guia completo sobre o que fazer quando ocorre um óbito. Passos a seguir, documentação necessária e como a Memória Eternus pode ajudar.',
+  title: 'Falecimento: Como Proceder',
+  description: 'Guia completo sobre como proceder em caso de falecimento. Passos a seguir, documentação necessária e como a Memória Eternus pode ajudar.',
   alternates: {
     canonical: '/perante-a-morte',
   },
@@ -60,7 +60,7 @@ export default function PeranteAMorte() {
 
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-white leading-tight mb-6">
-            Perante a Morte, <span className="text-gold-400">O Que Fazer?</span>
+            Falecimento: <span className="text-gold-400">Como Proceder?</span>
           </h1>
 
           {/* Decorative line */}

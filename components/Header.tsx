@@ -193,7 +193,7 @@ export default function Header() {
                               href="/perante-a-morte"
                               className="block px-4 py-3 text-sm text-brown-dark hover:bg-cream hover:text-gold-600 rounded-md transition-all duration-200"
                             >
-                              Perante a Morte, O Que Fazer?
+                              Falecimento: Como Proceder?
                             </Link>
                           </div>
                         </div>
@@ -298,7 +298,7 @@ export default function Header() {
                           className="block text-base text-brown-dark/80 hover:text-gold-600 transition-colors duration-300 py-2"
                           onClick={handleNavClick}
                         >
-                          Perante a Morte, O Que Fazer?
+                          Falecimento: Como Proceder?
                         </Link>
                       </div>
                     </div>
