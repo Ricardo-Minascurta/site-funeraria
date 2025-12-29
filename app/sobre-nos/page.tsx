@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Heart, Eye, Award, Palette, Clock, Leaf } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Sobre Nós',
+  description: 'Conheça a Memória Eternus. Acompanhamos famílias em momentos difíceis com respeito, dignidade e profissionalismo há mais de 20 anos em Lisboa.',
+  alternates: {
+    canonical: '/sobre-nos',
+  },
+}
 
 export default function SobreNos() {
   return (

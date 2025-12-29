@@ -1,6 +1,15 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Check, ArrowRight, Flower2, Phone } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Funeral com Cremação',
+  description: 'Serviço de funeral com cremação em Lisboa. Inclui recolha, preparação, urna, documentação e coordenação com crematório. Disponível 24h.',
+  alternates: {
+    canonical: '/servicos/funeral-cremacao',
+  },
+}
 
 const includedServices = [
   'Recolha e transporte do corpo',

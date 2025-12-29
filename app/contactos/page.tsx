@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Mail, MapPin, Clock, MessageCircle, Phone } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Contactos',
+  description: 'Entre em contacto com a Memória Eternus. Disponíveis 24 horas por dia, 7 dias por semana. Telefone: (+351) 928 352 824. Email: geralmemoriaeternus@gmail.com',
+  alternates: {
+    canonical: '/contactos',
+  },
+}
 
 const contactInfo = [
   {

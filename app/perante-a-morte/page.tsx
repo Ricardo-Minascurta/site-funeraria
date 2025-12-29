@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { FileText, Building2, Users, Clock } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Perante a Morte - O Que Fazer',
+  description: 'Guia completo sobre o que fazer quando ocorre um óbito. Passos a seguir, documentação necessária e como a Memória Eternus pode ajudar.',
+  alternates: {
+    canonical: '/perante-a-morte',
+  },
+}
 
 const services = [
   {

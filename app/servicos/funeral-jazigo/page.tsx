@@ -1,6 +1,15 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Check, ArrowRight, Home, Building2, Flower2, Phone } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Funeral com Jazigo',
+  description: 'Serviço de funeral com jazigo familiar ou perpétuo. Inclui recolha, preparação, caixão, documentação e coordenação. Disponível 24h em Lisboa.',
+  alternates: {
+    canonical: '/servicos/funeral-jazigo',
+  },
+}
 
 const includedServices = [
   'Recolha e transporte do corpo',

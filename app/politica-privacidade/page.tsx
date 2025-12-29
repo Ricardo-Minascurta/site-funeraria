@@ -1,3 +1,13 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Política de Privacidade',
+  description: 'Política de privacidade da Memória Eternus. Informações sobre recolha, tratamento e proteção dos seus dados pessoais.',
+  alternates: {
+    canonical: '/politica-privacidade',
+  },
+}
+
 export default function PoliticaPrivacidade() {
   return (
     <>
