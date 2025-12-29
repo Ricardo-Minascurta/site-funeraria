@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         {/* Content - Alinhado à Esquerda */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 lg:pt-40 pb-20">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-44 sm:pt-32 lg:pt-40 pb-20">
           <div className="max-w-xl lg:max-w-2xl">
             {/* Main Title */}
             <h1
