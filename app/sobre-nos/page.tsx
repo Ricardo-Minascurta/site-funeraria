@@ -14,7 +14,7 @@ export default function SobreNos() {
   return (
     <>
       {/* Hero Section - Elegant dark with floating elements */}
-      <section className="relative bg-brown-dark pt-40 pb-16 lg:py-32 overflow-hidden">
+      <section className="relative bg-brown-dark pt-40 pb-16 lg:pt-44 lg:pb-20 overflow-hidden">
         {/* Animated gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold-400/3 rounded-full blur-3xl" />
