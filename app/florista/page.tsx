@@ -14,32 +14,22 @@ const produtos = [
   {
     nome: 'Coroa de Flores',
     descricao: 'Coroa clássica com flores naturais variadas, ideal para homenagens tradicionais.',
-    imagem: '/images/florista/coroa-tradicional.jpeg',
+    imagem: '/images/florista/coroa dlores.jpg',
   },
   {
     nome: 'Cruz de Flores',
     descricao: 'Cruz decorada com flores selecionadas, símbolo de fé e esperança.',
-    imagem: '/images/florista/cruz-floral.jpeg',
+    imagem: '/images/florista/cruz-porto-santo-final.jpg',
   },
   {
     nome: 'Palma de Flores',
     descricao: 'Arranjo alongado com flores naturais, uma homenagem elegante e simbólica.',
-    imagem: '/images/florista/almofada-floral.jpeg',
+    imagem: '/images/florista/palma-terceira2.jpg',
   },
   {
     nome: 'Coração de Flores',
     descricao: 'Arranjo em forma de coração, uma forma carinhosa de homenagear quem partiu.',
-    imagem: '/images/florista/coroa-premium.jpeg',
-  },
-  {
-    nome: 'Ramo de Homenagem',
-    descricao: 'Ramo delicado e simbólico para oferecer em momentos de despedida.',
-    imagem: '/images/florista/ramo-homenagem.jpeg',
-  },
-  {
-    nome: 'Centro de Mesa',
-    descricao: 'Arranjo elegante para cerimónias, velórios ou altares de homenagem.',
-    imagem: '/images/florista/centro-mesa.jpeg',
+    imagem: '/images/florista/coracao flores.jpg',
   },
 ]
 
