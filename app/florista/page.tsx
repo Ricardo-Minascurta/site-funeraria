@@ -31,6 +31,16 @@ const produtos = [
     descricao: 'Arranjo em forma de coração, uma forma carinhosa de homenagear quem partiu.',
     imagem: '/images/florista/coroa-premium.jpeg',
   },
+  {
+    nome: 'Ramo de Homenagem',
+    descricao: 'Ramo delicado e simbólico para oferecer em momentos de despedida.',
+    imagem: '/images/florista/ramo-homenagem.jpeg',
+  },
+  {
+    nome: 'Centro de Mesa',
+    descricao: 'Arranjo elegante para cerimónias, velórios ou altares de homenagem.',
+    imagem: '/images/florista/centro-mesa.jpeg',
+  },
 ]
 
 export default function Florista() {
