@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Check, ArrowRight, Clock, Flower2, Phone } from 'lucide-react'
+import { Check, ArrowRight, Clock, Flower2, Phone, Download } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Funeral com Sepultura',
@@ -120,6 +120,16 @@ export default function FuneralSepultura() {
                     com dignidade e serenidade.
                   </p>
                 </div>
+
+                {/* Download Catálogo */}
+                <a
+                  href="/catalogos/Memória Eternus Urnas de Sepultura.pdf"
+                  download
+                  className="group inline-flex items-center gap-3 bg-brown-dark hover:bg-gold-600 text-white px-6 py-3.5 rounded-xl font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg mt-8"
+                >
+                  <Download className="w-4 h-4 group-hover:animate-bounce" />
+                  <span>Ver Catálogo de Urnas de Sepultura</span>
+                </a>
               </div>
 
               {/* Types Section */}
