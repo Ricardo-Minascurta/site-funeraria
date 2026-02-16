@@ -12,40 +12,24 @@ export const metadata: Metadata = {
 
 const produtos = [
   {
-    nome: 'Coroa Tradicional',
+    nome: 'Coroa de Flores',
     descricao: 'Coroa clássica com flores naturais variadas, ideal para homenagens tradicionais.',
-    preco: 'Desde 80€',
     imagem: '/images/florista/coroa-tradicional.jpeg',
   },
   {
-    nome: 'Coroa Premium',
-    descricao: 'Coroa de grandes dimensões com flores nobres selecionadas e acabamento premium.',
-    preco: 'Desde 120€',
-    imagem: '/images/florista/coroa-premium.jpeg',
+    nome: 'Cruz de Flores',
+    descricao: 'Cruz decorada com flores selecionadas, símbolo de fé e esperança.',
+    imagem: '/images/florista/cruz-floral.jpeg',
   },
   {
-    nome: 'Centro de Mesa',
-    descricao: 'Arranjo elegante para cerimónias, velórios ou altares de homenagem.',
-    preco: 'Desde 45€',
-    imagem: '/images/florista/centro-mesa.jpeg',
-  },
-  {
-    nome: 'Ramo de Homenagem',
-    descricao: 'Ramo delicado e simbólico para oferecer em momentos de despedida.',
-    preco: 'Desde 35€',
-    imagem: '/images/florista/ramo-homenagem.jpeg',
-  },
-  {
-    nome: 'Almofada Floral',
-    descricao: 'Almofada de flores naturais, perfeita para colocar sobre a urna.',
-    preco: 'Desde 95€',
+    nome: 'Palma de Flores',
+    descricao: 'Arranjo alongado com flores naturais, uma homenagem elegante e simbólica.',
     imagem: '/images/florista/almofada-floral.jpeg',
   },
   {
-    nome: 'Cruz Floral',
-    descricao: 'Cruz decorada com flores selecionadas, símbolo de fé e esperança.',
-    preco: 'Desde 110€',
-    imagem: '/images/florista/cruz-floral.jpeg',
+    nome: 'Coração de Flores',
+    descricao: 'Arranjo em forma de coração, uma forma carinhosa de homenagear quem partiu.',
+    imagem: '/images/florista/coroa-premium.jpeg',
   },
 ]
 
@@ -150,10 +134,7 @@ export default function Florista() {
                     {produto.descricao}
                   </p>
 
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-semibold text-gold-600">
-                      {produto.preco}
-                    </span>
+                  <div className="flex items-center justify-end">
                     <span className="inline-flex items-center gap-2 text-sm text-brown-dark/60 group-hover:text-gold-600 transition-colors duration-300">
                       <span>Ver Flores</span>
                       <ArrowRight className="w-4 h-4" />
@@ -168,7 +149,6 @@ export default function Florista() {
           <div className="mt-16 text-center">
             <div className="inline-block bg-white rounded-xl p-8 shadow-md border border-gold-400/10 max-w-2xl">
               <p className="text-brown-dark/70 text-sm leading-relaxed mb-4">
-                <span className="font-medium text-brown-dark">Nota:</span> Preços indicativos.
                 Arranjos personalizados mediante consulta. Todas as flores são naturais e frescas,
                 podendo variar conforme disponibilidade sazonal.
               </p>
