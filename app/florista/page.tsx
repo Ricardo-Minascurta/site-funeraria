@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -122,8 +121,11 @@ export default function Florista() {
           {/* Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {produtos.map((produto, index) => (
-              <div
+              <a
                 key={index}
+                href="https://coroastenreiro.com/flores-funerais/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-gold-400/10"
               >
                 {/* Image Container - 1:1 aspect ratio */}
@@ -152,18 +154,13 @@ export default function Florista() {
                     <span className="text-lg font-semibold text-gold-600">
                       {produto.preco}
                     </span>
-                    <a
-                      href="https://wa.me/351928352824"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-brown-dark/60 hover:text-gold-600 transition-colors duration-300"
-                    >
-                      <span>Encomendar</span>
+                    <span className="inline-flex items-center gap-2 text-sm text-brown-dark/60 group-hover:text-gold-600 transition-colors duration-300">
+                      <span>Ver Flores</span>
                       <ArrowRight className="w-4 h-4" />
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
