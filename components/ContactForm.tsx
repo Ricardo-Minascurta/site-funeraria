@@ -14,11 +14,10 @@ export default function ContactForm() {
     const formData = new FormData(form)
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/geralmemoriaeternus@gmail.com', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
         },
         body: JSON.stringify(Object.fromEntries(formData)),
       })
@@ -58,10 +57,6 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-gold-400/10">
-      {/* Hidden fields for formsubmit.co */}
-      <input type="hidden" name="_subject" value="Novo contacto via website Memória Eternus" />
-      <input type="hidden" name="_template" value="table" />
-
       <h3 className="text-2xl font-serif font-semibold text-brown-dark mb-2">
         Envie-nos uma <span className="text-gold-600">Mensagem</span>
       </h3>

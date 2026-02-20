@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, ExternalLink } from 'lucide-react'
+import { Phone, Mail, Clock, Facebook, Instagram, ExternalLink } from 'lucide-react'
 
 const navigation = [
   { name: 'Início', href: '/' },
@@ -142,15 +142,6 @@ export default function Footer() {
                 >
                   geralmemoriaeternus@gmail.com
                 </a>
-              </div>
-
-              {/* Address */}
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
-                <span className="text-white/70 text-sm">
-                  Rua [A Definir]<br />
-                  Lisboa, Portugal
-                </span>
               </div>
 
               {/* Hours */}

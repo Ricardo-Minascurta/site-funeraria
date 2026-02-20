@@ -80,7 +80,6 @@ export default function PoliticaPrivacidade() {
                   <p>
                     <strong className="text-brown-dark">MEMÓRIA ETERNUS - SERVIÇOS DE ASSISTÊNCIA FUNERÁRIA, UNIPESSOAL LDA</strong>
                   </p>
-                  <p>Morada: Lisboa, Portugal</p>
                   <p>NIF: 519142608</p>
                   <p>
                     A Memória Eternus é a entidade responsável pelo tratamento dos dados

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Mail, MapPin, Clock, MessageCircle, Phone } from 'lucide-react'
+import { Mail, Clock, MessageCircle, Phone } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -34,14 +34,6 @@ const contactInfo = [
     description: 'Para questões gerais',
     content: [
       { label: 'geralmemoriaeternus@gmail.com', href: 'mailto:geralmemoriaeternus@gmail.com' },
-    ],
-  },
-  {
-    icon: MapPin,
-    title: 'Morada',
-    description: 'Venha visitar-nos',
-    content: [
-      { label: 'Lisboa, Portugal', href: null },
     ],
   },
   {
@@ -118,20 +110,19 @@ export default function Contactos() {
       {/* Main Content */}
       <section className="bg-cream py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mb-10">
+            <span className="inline-block text-xs sm:text-sm font-sans font-medium tracking-[0.25em] text-gold-600 uppercase mb-3">
+              Informações de Contacto
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-semibold text-brown-dark">
+              Como nos <span className="text-gold-600">encontrar</span>
+            </h2>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Left Column - Contact Info */}
-            <div className="space-y-6">
-              <div className="mb-8">
-                <span className="inline-block text-xs sm:text-sm font-sans font-medium tracking-[0.25em] text-gold-600 uppercase mb-3">
-                  Informações de Contacto
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-serif font-semibold text-brown-dark">
-                  Como nos <span className="text-gold-600">encontrar</span>
-                </h2>
-              </div>
-
-              {/* Contact Cards */}
-              <div className="space-y-4">
+            <div className="space-y-4">
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon
                   return (
@@ -177,7 +168,6 @@ export default function Contactos() {
                     </div>
                   )
                 })}
-              </div>
             </div>
 
             {/* Right Column - Contact Form & Social */}
