@@ -62,10 +62,7 @@ export default function ContactForm() {
       <input type="hidden" name="_subject" value="Novo contacto via website Memória Eternus" />
       <input type="hidden" name="_template" value="table" />
 
-      <h3 className="text-2xl font-serif font-semibold text-brown-dark mb-2">
-        Envie-nos uma <span className="text-gold-600">Mensagem</span>
-      </h3>
-      <p className="text-sm text-brown-dark/50 mb-8">
+      <p className="text-sm text-brown-dark/50 mb-6">
         Preencha o formulário e entraremos em contacto consigo.
       </p>
 

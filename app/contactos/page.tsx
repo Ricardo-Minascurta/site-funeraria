@@ -182,6 +182,15 @@ export default function Contactos() {
 
             {/* Right Column - Contact Form & Social */}
             <div className="space-y-8">
+              <div className="mb-8">
+                <span className="inline-block text-xs sm:text-sm font-sans font-medium tracking-[0.25em] text-gold-600 uppercase mb-3">
+                  Formulário de Contacto
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-serif font-semibold text-brown-dark">
+                  Envie-nos uma <span className="text-gold-600">mensagem</span>
+                </h2>
+              </div>
+
               {/* Contact Form */}
               <ContactForm />
 
