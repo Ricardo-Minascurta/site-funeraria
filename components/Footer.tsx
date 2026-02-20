@@ -74,7 +74,7 @@ export default function Footer() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/memoriaeternus?igsh=ZzdjN3I4bHh2dDZn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-gold-400 hover:border-gold-400 hover:text-white transition-all duration-300"
@@ -83,7 +83,7 @@ export default function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/351928352824"
+                href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-gold-400 hover:border-gold-400 hover:text-white transition-all duration-300"
@@ -190,9 +190,12 @@ export default function Footer() {
                 )
               ))}
 
-              {/* NIF */}
-              <div className="mt-2 pt-3 border-t border-white/10">
-                <span className="text-white/50 text-xs">NIF: [A Definir]</span>
+              {/* Razão Social & NIF */}
+              <div className="mt-2 pt-3 border-t border-white/10 space-y-1">
+                <span className="text-white/50 text-xs block">NIF: 519142608</span>
+                <span className="text-white/40 text-[10px] block leading-tight">
+                  MEMÓRIA ETERNUS - SERVIÇOS DE ASSISTÊNCIA FUNERÁRIA, UNIPESSOAL LDA
+                </span>
               </div>
             </div>
           </div>

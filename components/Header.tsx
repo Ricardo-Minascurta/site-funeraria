@@ -214,7 +214,7 @@ export default function Header() {
             {/* CTA Button & Mobile Menu Toggle */}
             <div className="flex items-center gap-4">
               <a
-                href="https://wa.me/351928352824"
+                href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-600 text-white px-5 py-2.5 rounded-md font-medium text-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold-400/20"
@@ -326,7 +326,7 @@ export default function Header() {
             style={{ transitionDelay: mobileMenuOpen ? '400ms' : '0ms' }}
           >
             <a
-              href="https://wa.me/351928352824"
+              href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-600 text-white px-6 py-4 rounded-lg font-medium text-base transition-all duration-300 shadow-lg shadow-gold-400/20"

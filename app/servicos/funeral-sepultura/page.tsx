@@ -253,7 +253,7 @@ export default function FuneralSepultura() {
                     </p>
 
                     <a
-                      href="https://wa.me/351928352824"
+                      href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex items-center justify-center gap-3 w-full bg-gold-400 hover:bg-gold-600 text-white py-4 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -317,7 +317,7 @@ export default function FuneralSepultura() {
           </p>
 
           <a
-            href="https://wa.me/351928352824"
+            href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl"

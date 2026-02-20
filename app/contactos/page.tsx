@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { Mail, MapPin, Clock, MessageCircle, Phone } from 'lucide-react'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contactos',
@@ -25,7 +25,7 @@ const contactInfo = [
     title: 'WhatsApp',
     description: 'Resposta rápida',
     content: [
-      { label: '(+351) 928 352 824', href: 'https://wa.me/351928352824' },
+      { label: '(+351) 928 352 824', href: 'https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços' },
     ],
   },
   {
@@ -180,33 +180,10 @@ export default function Contactos() {
               </div>
             </div>
 
-            {/* Right Column - Map & Social */}
+            {/* Right Column - Contact Form & Social */}
             <div className="space-y-8">
-              {/* Map Placeholder */}
-              <div>
-                <span className="inline-block text-xs sm:text-sm font-sans font-medium tracking-[0.25em] text-gold-600 uppercase mb-3">
-                  Localização
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-serif font-semibold text-brown-dark mb-6">
-                  Onde <span className="text-gold-600">estamos</span>
-                </h2>
-
-                {/* Map Container */}
-                <div className="relative aspect-[4/3] bg-brown-dark/5 rounded-2xl overflow-hidden border border-gold-400/10 shadow-lg">
-                  {/* Placeholder pattern */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-12 h-12 text-gold-400/40 mx-auto mb-3" />
-                      <p className="text-brown-dark/40 text-sm">
-                        Mapa em breve
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Decorative overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gold-400/5 via-transparent to-brown-dark/5" />
-                </div>
-              </div>
+              {/* Contact Form */}
+              <ContactForm />
 
               {/* Social Media */}
               <div className="bg-white rounded-xl p-6 shadow-md border border-gold-400/10">
@@ -236,7 +213,9 @@ export default function Contactos() {
 
                     {/* Instagram */}
                     <a
-                      href="#"
+                      href="https://www.instagram.com/memoriaeternus?igsh=ZzdjN3I4bHh2dDZn"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 p-3 rounded-lg bg-cream/50 hover:bg-cream transition-colors duration-300 group"
                     >
                       <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center">
@@ -273,7 +252,7 @@ export default function Contactos() {
 
           <div className="flex items-center justify-center">
             <a
-              href="https://wa.me/351928352824"
+              href="https://wa.me/351928352824?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl min-w-[200px] justify-center"
