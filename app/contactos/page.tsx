@@ -188,7 +188,9 @@ export default function Contactos() {
                   <div className="space-y-3">
                     {/* Facebook */}
                     <a
-                      href="#"
+                      href="https://www.facebook.com/share/1Ax3KAZDzY/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 p-3 rounded-lg bg-cream/50 hover:bg-cream transition-colors duration-300 group"
                     >
                       <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
